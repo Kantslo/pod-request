@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+  body {
+    font-family: "outfit", sans-serif;
+    background: #121725;
+    background-image: url("../mobile/image-host.jpg");
+    background-blend-mode: overlay;
+  }
+
+  .spotify{
+    width: 56px;
+    height: 17px;
+  }
+  .applePod{
+    width: 45px;
+    height: 17px;
+  }
+  .googlePod{
+    width: 73px;
+    height: 11px;
+  }
+  .pocket{
+    width: 77px;
+    height: 15px;
+  }
+  
+  .container {
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
+  
+  h1 {
+    color: #54E6AF;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    text-transform: uppercase;
+    padding-top: 60px;
+  }
+  
+  .white {
+    color: #FFFFFF;
+  }
+  
+  p {
+    color: #C2CBE5;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-shrink: 0;
+    padding-bottom: 50px;
+  }
+  
+  #error {
+    color: #FB3E3E;
+    font-size: 12px;
+    line-height: 14px;
+    width: 300px;
+    height: 14px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 15px;
+    margin-left: -35px;
+  }
+  
+  #email {
+    width: 327px;
+    height: 46px;
+    background-color: #2C344B;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+    line-height: 28px;
+    color: white;
+    padding-left: 32px;
+  }
+  
+  button {
+    background-color: #54E6AF;
+    color: #121725;
+    border: none;
+    border-radius: 50px;
+    width: 327px;
+    height: 46px;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: "outfit", sans-serif;
+    font-weight: 400;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background-color: #B3FFE2;
+  }
+  
+  .dots {
+    display: none;
+  }
+
+  
+
+@media only screen and (min-width: 376px) {
+  body {
+    background-image: url("../tablet/image-host.jpg");
+    background-position: top right;
+    background-blend-mode: normal;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    background-color: #121725;
+    width: 635px;
+    height: 509px;
+    display: flex;
+    margin: 152px 40px 0;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+    text-align: left;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    width: 445px;
+  }
+
+  .socials {
+    width: 536px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-right: 98px;
+  }
+
+  #myForm {
+    margin-right: 206px;
+  }
+
+  #error {
+    z-index: -1;
+  }
+
+  #email {
+    width: 427px;
+    height: 56px;
+  }
+
+  button {
+    width: 162px;
+    height: 46px;
+    position: absolute;
+    margin-top: -66px;
+    left: 300px;
+  }
+
+  .dots {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 30px;
+    padding-top: 150px;
+  }
+
+  .logo {
+    padding: 0;
+    margin: 50px 40px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    background-image: url("../desktop/image-host.jpg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+  }
+
+  .dots {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+  }
+
+  .container {
+    width: 723px;
+    margin: 0 auto;
+    margin-right: 550px;
+  }
+
+  h1 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  button {
+    left: 520px;
+  }
+
+  .logo {
+    margin-left: 250px;
+  }
+
+  #myForm {
+    margin-right: 295px;
+  } 
+
+  .socials {
+    margin-right: 185px;
+  }
+}
